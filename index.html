@@ -26,7 +26,7 @@ strong { font-weight: 600; }
 </head>
 <body>
 <h1>Galplay 隐私政策</h1>
-<p><strong>最后更新：2026 年 10 月 8 日</strong></p>
+<p><strong>最后更新：2026 年 10 月 9 日</strong></p>
 <hr>
 
 <h2>概述</h2>
@@ -99,7 +99,7 @@ strong { font-weight: 600; }
 <li><strong>Apple 签名的 App 交易信息</strong>：包括此 App 在你 Apple 账户下的交易编号（App Transaction ID）、首次获取日期与版本，以及正式／沙盒环境；</li>
 <li><strong>Apple 签名的 App 内购交易</strong>：商品 ID、交易编号、购买日期，以及退款或撤销日期；</li>
 <li><strong>试用开始记录</strong>：首次累计在前台游玩满 60 秒时，App 发送一个随机事件编号、服务器此前签发的时间凭证和经过的时长，用来确定 7 天试用从何时开始；不发送游戏名称或游戏内容；</li>
-<li><strong>购买前的权益状态</strong>：购买限时通行证时，附带服务器此前签发的权益状态，用于记录购买前剩余的时长。</li>
+<li><strong>购买前的权益状态</strong>：购买时（包括限时通行证和永久解锁），附带服务器此前签发的权益状态，用于记录购买前剩余的时长。</li>
 </ul>
 <p>权益服务会通过 Apple 的 App Store Server API 核对这些交易并读取本 App 的购买历史，也会接收 Apple 发送的购买、退款和撤销通知。服务器保存：App Transaction ID、GP ID、试用开始时间及其凭证、本 App 的购买记录（交易编号、商品、购买日期、退款／撤销日期、购买前剩余时长）、早期付费版的购买资格（首次购买日期与版本）、Apple 通知记录，以及客服调整记录（例如补偿时长或永久权益，包括操作原因）。App 中的退款提醒由这些记录生成。</p>
 <p><strong>Galplay ID（GP ID）。</strong>首次同步时，服务器根据 App Transaction ID 生成一个以 <code>GP-</code> 开头的短编号，显示在 App 中，供你联系我们时提供。它也会附在你之后提交的适配需求和失败诊断报告中（见第 6 节）。</p>
@@ -115,7 +115,7 @@ strong { font-weight: 600; }
 <p>如有疑问，请联系：<strong>zhongzhyu@gmail.com</strong></p>
 <hr>
 <h1>Galplay Privacy Policy</h1>
-<p><strong>Last updated: October 8, 2026</strong></p>
+<p><strong>Last updated: October 9, 2026</strong></p>
 <h2>Overview</h2>
 <p>Galplay plays visual novels that you import on your iPhone or iPad, using Ren&#x27;Py, Kirikiri, ONScripter, and other engines. The app requires no account and has no analytics, ads, or third-party tracking SDKs. It does not upload game files, saves, or game text to Galplay&#x27;s servers. To provide the trial and purchases, the app automatically syncs the Apple transaction information described in section 7 with Galplay&#x27;s entitlement service. The app sends the information described in section 6 only when you submit a compatibility request or tap OK in a game failure dialog.</p>
 <h2>Data that stays on your device</h2>
@@ -143,7 +143,7 @@ strong { font-weight: 600; }
 <li><strong>Apple-signed app transaction</strong>, including this app&#x27;s transaction ID for your Apple account (App Transaction ID), the original download date and version, and the production/sandbox environment;</li>
 <li><strong>Apple-signed in-app purchase transactions</strong>: product ID, transaction ID, purchase date, and any refund or revocation date;</li>
 <li><strong>Trial start record</strong>: when you first reach 60 seconds of foreground play, a random event ID, a time token previously signed by the server, and the elapsed time, used to set when the 7-day trial starts; no game name or game content is sent;</li>
-<li><strong>Pre-purchase status</strong>: when you buy a time-limited pass, the entitlement status the server previously signed, used to record the time remaining before the purchase.</li>
+<li><strong>Pre-purchase status</strong>: when you make a purchase (a time-limited pass or the permanent unlock), the entitlement status the server previously signed, used to record the time remaining before the purchase.</li>
 </ul>
 <p>The entitlement service checks these transactions and reads this app&#x27;s purchase history through Apple&#x27;s App Store Server API, and receives Apple&#x27;s purchase, refund, and revocation notifications. The server stores: the App Transaction ID, GP ID, trial start time and its token, this app&#x27;s purchase records (transaction IDs, products, purchase dates, refund/revocation dates, time remaining before purchase), eligibility from the earlier paid version (original purchase date and version), Apple notification records, and support adjustments (such as added time or a permanent unlock, with the reason). Refund notices in the app are generated from these records.</p>
 <p><em>Galplay ID (GP ID).</em> On the first sync, the server derives a short ID starting with <code>GP-</code> from the App Transaction ID. It is shown in the app so you can give it to us when you contact us, and it is attached to compatibility requests and failure reports you submit later (see section 6).</p>

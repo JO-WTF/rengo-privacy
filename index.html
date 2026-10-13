@@ -26,13 +26,13 @@ strong { font-weight: 600; }
 </head>
 <body>
 <h1>Galplay 隐私政策</h1>
-<p><strong>最后更新：2026 年 10 月 9 日</strong></p>
+<p><strong>最后更新：2026 年 10 月 14 日</strong></p>
 <hr>
 
 <h2>概述</h2>
-<p>Galplay 是在 iPhone 和 iPad 上运行用户自行导入的 Ren&#x27;Py、Kirikiri、ONScripter 等引擎视觉小说的播放器。应用不要求账号，没有分析统计、广告或第三方追踪 SDK；不会把游戏文件、存档或游戏文本上传到 Galplay 的服务器。为提供试用和购买功能，App 会自动与 Galplay 权益服务同步第 7 节所述的 Apple 交易信息；只有你主动提交适配需求，或在游戏失败提示中点「确定」时，App 才会把第 6 节所述的信息发送给 Galplay。</p>
+<p>Galplay 是在 iPhone 和 iPad 上运行用户自行导入的 Ren&#x27;Py、Kirikiri、ONScripter 等引擎视觉小说的播放器。应用不要求账号，没有广告、第三方分析或追踪 SDK；不会把游戏文件、存档或游戏文本上传到 Galplay 的服务器。为提供试用和购买功能，App 会自动与 Galplay 权益服务同步第 7 节所述的 Apple 交易信息；查询公告时会附带第 2 节所述的 App 与设备信息；游玩时会发送第 8 节所述的启动统计（游戏标题、引擎、游玩时长）。只有你主动提交适配需求，或在游戏失败提示中点「确定」时，App 才会把第 6 节所述的信息发送给 Galplay。</p>
 <h2>留在你设备上的数据</h2>
-<p>以下内容保存在 App 沙盒或你明确选择的外部文件夹中；除第 6 节所述、由你确认发送的游戏名称外，Galplay 不会把它们上传到自有服务器。你主动使用备份或传输时，文件会送往你选择的位置：</p>
+<p>以下内容保存在 App 沙盒或你明确选择的外部文件夹中；除第 6 节所述、由你确认发送的游戏名称，以及第 8 节所述的游戏标题与游玩时长外，Galplay 不会把它们上传到自有服务器。你主动使用备份或传输时，文件会送往你选择的位置：</p>
 <ul>
 <li>你导入的作品文件</li>
 <li>游戏存档与游戏内设置</li>
@@ -42,7 +42,7 @@ strong { font-weight: 600; }
 </ul>
 <p>删除 App 会删除其沙盒内的数据；外部文件夹中的文件由你自行管理。</p>
 <h2>联网行为</h2>
-<p>Galplay 仅在下列功能中联网；公告列表、游戏适配表和权益状态（第 7 节）会在打开 App 时自动更新，其他传输、查询与提交由你选择使用：</p>
+<p>Galplay 仅在下列功能中联网；公告列表、游戏适配表和权益状态（第 7 节）会在打开 App 时自动更新，启动统计（第 8 节）在游玩时自动发送，其他传输、查询与提交由你选择使用：</p>
 <h3>1. 作品资料与封面查询</h3>
 <p>当你为作品匹配资料时，App 会向以下服务发送<strong>你查询的作品名称</strong>：</p>
 <table>
@@ -70,6 +70,7 @@ strong { font-weight: 600; }
 <p>查询会向相应服务发送作品名称。这些服务有各自的隐私政策，不受我们控制。</p>
 <h3>2. 公告与点赞</h3>
 <p>打开 App 后可能从 Galplay 公告服务获取公告，使用 App 当前语言；你点赞时会提交公告编号，不要求账号。已点赞记录只保存在本机，不跨设备同步。</p>
+<p>若 App 已从权益服务取得你的 Galplay ID（GP ID，见第 7 节），查询公告时会同时查询发给你的个人消息（例如客服补偿的游玩时间），并附带 GP ID、App 版本、系统版本、设备型号（例如 <code>iPhone17,2</code>）、App Store 地区和 App 语言。服务器为该 GP ID 保存最近一次查询的时间和这些信息，用于客服支持和兼容问题排查；不发送设备标识符或广告标识符。</p>
 <h3>3. WebDAV 存档备份（可选）</h3>
 <p>若你自行配置了 WebDAV 服务器，App 会把<strong>存档文件</strong>上传到<strong>你指定的服务器</strong>。服务器地址、用户名与密码保存在你设备的系统钥匙串／偏好存储中，不会发送给我们或任何第三方。数据流向完全由你决定。</p>
 <h3>4. 局域网游戏与存档传输（可选）</h3>
@@ -105,6 +106,16 @@ strong { font-weight: 600; }
 <p><strong>Galplay ID（GP ID）。</strong>首次同步时，服务器根据 App Transaction ID 生成一个以 <code>GP-</code> 开头的短编号，显示在 App 中，供你联系我们时提供。它也会附在你之后提交的适配需求和失败诊断报告中（见第 6 节）。</p>
 <p><strong>用途。</strong>这些信息只用于验证和恢复你的权益、处理退款以及客服支持；不用于广告或追踪，不出售。服务运行在 Cloudflare 上；除 Cloudflare 作为托管服务商代为传输和存储、以及向 Apple 核对交易外，不与第三方共享。Galplay 的数据库不保存 IP 地址。</p>
 <p><strong>保留与删除。</strong>权益记录目前没有自动删除期限；为了让你能随时恢复已购权益，会一直保存。如需删除，请发邮件到下方联系地址并提供你的 GP ID，我们会手动删除服务器上对应的记录。删除后，试用和客服调整记录无法恢复；在 Apple 完成的购买仍可通过「恢复购买」重新向 Apple 核对。</p>
+<h3>8. 启动统计</h3>
+<p>若 App 已取得你的 Galplay ID（见第 7 节），每次游戏成功启动（显示出第一个画面）时，App 会向 Galplay 公告服务（<code>galplay.fuckk.me</code>）发送：</p>
+<ul>
+<li>本次启动的随机编号和你的 GP ID；</li>
+<li>游戏引擎类型（例如 Kirikiri、Ren&#x27;Py）、游戏在游戏库中的标题，以及 App 版本。</li>
+</ul>
+<p>游戏切到后台或结束时，App 再用同一编号发送本次启动在前台游玩的时长。没有 GP ID 时不发送；网络不可用时，App 会在本机暂存这些记录（最多 100 条）并稍后重试。不发送游戏文件、存档、游戏文本、文件路径、设备标识符或广告标识符。</p>
+<p>服务器保存每次启动的记录（引擎、标题、App 版本、开始时间、游玩时长），以及每个 GP ID 的启动次数、最近启动时间和累计游玩时长。</p>
+<p><strong>用途。</strong>了解各引擎和游戏的实际使用情况，用来安排兼容与优化的优先级，以及客服支持；不用于广告或追踪，不出售。服务运行在 Cloudflare 上；除 Cloudflare 作为托管服务商代为传输和存储外，不与第三方共享。Galplay 的数据库不保存 IP 地址。</p>
+<p><strong>保留与删除。</strong>启动记录目前没有自动删除期限。如需删除，请发邮件到下方联系地址并提供你的 GP ID，我们会删除对应的启动记录。</p>
 <h2>你导入的内容</h2>
 <p>除内置示例作品外，Galplay 不提供或分发第三方游戏。你导入的作品由你自行获取，其内容与合规性由你负责。App 会在设备本地检查项目结构与运行所需资源，不会把完整游戏文件上传到 Galplay 的服务器。</p>
 <h2>儿童</h2>
@@ -115,15 +126,15 @@ strong { font-weight: 600; }
 <p>如有疑问，请联系：<strong>zhongzhyu@gmail.com</strong></p>
 <hr>
 <h1>Galplay Privacy Policy</h1>
-<p><strong>Last updated: October 9, 2026</strong></p>
+<p><strong>Last updated: October 14, 2026</strong></p>
 <h2>Overview</h2>
-<p>Galplay plays visual novels that you import on your iPhone or iPad, using Ren&#x27;Py, Kirikiri, ONScripter, and other engines. The app requires no account and has no analytics, ads, or third-party tracking SDKs. It does not upload game files, saves, or game text to Galplay&#x27;s servers. To provide the trial and purchases, the app automatically syncs the Apple transaction information described in section 7 with Galplay&#x27;s entitlement service. The app sends the information described in section 6 only when you submit a compatibility request or tap OK in a game failure dialog.</p>
+<p>Galplay plays visual novels that you import on your iPhone or iPad, using Ren&#x27;Py, Kirikiri, ONScripter, and other engines. The app requires no account and has no ads or third-party analytics or tracking SDKs. It does not upload game files, saves, or game text to Galplay&#x27;s servers. To provide the trial and purchases, the app automatically syncs the Apple transaction information described in section 7 with Galplay&#x27;s entitlement service. It sends the app and device information described in section 2 with announcement checks, and the launch statistics described in section 8 (game title, engine, play time) while you play. The app sends the information described in section 6 only when you submit a compatibility request or tap OK in a game failure dialog.</p>
 <h2>Data that stays on your device</h2>
-<p>Imported works, saves and in-game settings, library information, preferences, and translations generated on your device stay in the app sandbox or an external folder you explicitly choose. Apart from the game name you choose to send as described in section 6, Galplay does not upload them to its own servers. User-selected backups and transfers may send files to the destination you choose. Deleting the app removes sandbox data; you manage files in external folders yourself.</p>
+<p>Imported works, saves and in-game settings, library information, preferences, and translations generated on your device stay in the app sandbox or an external folder you explicitly choose. Apart from the game name you choose to send as described in section 6, and the game titles and play time described in section 8, Galplay does not upload them to its own servers. User-selected backups and transfers may send files to the destination you choose. Deleting the app removes sandbox data; you manage files in external folders yourself.</p>
 <h2>Network activity</h2>
-<p>Galplay uses the network only for the functions below. The announcement list, the game compatibility list, and your entitlement status (section 7) refresh when the app opens; other lookups, transfers, and submissions are used at your choice.</p>
+<p>Galplay uses the network only for the functions below. The announcement list, the game compatibility list, and your entitlement status (section 7) refresh when the app opens, and launch statistics (section 8) are sent while you play; other lookups, transfers, and submissions are used at your choice.</p>
 <p><strong>1. Metadata and cover art lookups.</strong> When you match a work, the app sends <strong>the title you are searching for</strong> to VNDB (<code>api.vndb.org</code>), IGDB (<code>api.igdb.com</code>, authenticated via <code>id.twitch.tv</code>), and SteamGridDB (<code>steamgriddb.com</code>). The title is sent to the relevant service. These services have their own privacy policies, outside our control.</p>
-<p><strong>2. Announcements and likes.</strong> The app may request announcements in your app language when it opens. Liking an announcement sends its ID without requiring an account; the liked state stays on this device and does not sync across devices.</p>
+<p><strong>2. Announcements and likes.</strong> The app may request announcements in your app language when it opens. Liking an announcement sends its ID without requiring an account; the liked state stays on this device and does not sync across devices. Once the app has your Galplay ID (GP ID, see section 7), the same check also fetches personal messages for you (such as play time added by support) and includes your GP ID, app version, system version, device model (for example <code>iPhone17,2</code>), App Store country, and app language. The server keeps the time of the latest check and this information for that GP ID for support and compatibility troubleshooting. No device or advertising identifier is sent.</p>
 <p><strong>3. WebDAV save backup (optional).</strong> If you configure a WebDAV server, save files are uploaded to <strong>the server you specify</strong>. The address, username, and password are stored on your device and are never sent to us or any third party.</p>
 <p><strong>4. Local network game and save transfer (optional).</strong> When enabled, the app runs a temporary local HTTP service so a browser on the same network can send game or save files. The service stops when you close the transfer page; this feature does not upload the files to Galplay&#x27;s servers.</p>
 <p><strong>5. External-folder backup (optional).</strong> If you pick a folder in Files, saves are written there. Galplay accesses it only when you explicitly configure, back up, browse, restore, or delete. If you choose iCloud Drive, iOS handles subsequent syncing. WebDAV and cloud <strong>game import</strong> are still in development; this is separate from the available WebDAV <strong>save backup</strong> feature.</p>
@@ -149,6 +160,9 @@ strong { font-weight: 600; }
 <p><em>Galplay ID (GP ID).</em> On the first sync, the server derives a short ID starting with <code>GP-</code> from the App Transaction ID. It is shown in the app so you can give it to us when you contact us, and it is attached to compatibility requests and failure reports you submit later (see section 6).</p>
 <p><em>Use.</em> This information is used only to verify and restore your access, handle refunds, and provide support. It is not used for advertising or tracking and is not sold. The service runs on Cloudflare; apart from Cloudflare transmitting and storing it as our hosting provider and checking transactions with Apple, it is not shared with third parties. Galplay&#x27;s database does not store IP addresses.</p>
 <p><em>Retention and deletion.</em> Entitlement records have no automatic deletion period at present and are kept so that you can restore purchased access at any time. To have them deleted, email the address below with your GP ID and we will delete the matching server records manually. After deletion, trial and support-adjustment records cannot be recovered; purchases made through Apple can be checked with Apple again using Restore Purchases.</p>
+<p><strong>8. Launch statistics.</strong> Once the app has your Galplay ID (see section 7), each time a game launches successfully (shows its first frame), the app sends to the Galplay announcement service (<code>galplay.fuckk.me</code>) a random ID for this launch, your GP ID, the game engine (for example Kirikiri or Ren&#x27;Py), the game&#x27;s title in your library, and the app version. When the game goes to the background or ends, the app sends the foreground play time of that launch under the same ID. Nothing is sent without a GP ID; when the network is unavailable, the app keeps these records on the device (at most 100) and retries later. No game files, saves, game text, file paths, or device or advertising identifiers are sent. The server stores each launch (engine, title, app version, start time, play time) and, for each GP ID, the number of launches, the latest launch time, and the total play time.</p>
+<p><em>Use.</em> To understand how engines and games are actually used, set priorities for compatibility and performance work, and provide support. It is not used for advertising or tracking and is not sold. The service runs on Cloudflare; apart from Cloudflare transmitting and storing it as our hosting provider, it is not shared with third parties. Galplay&#x27;s database does not store IP addresses.</p>
+<p><em>Retention and deletion.</em> Launch records have no automatic deletion period at present. To have them deleted, email the address below with your GP ID and we will delete the matching launch records.</p>
 <h2>Content you import</h2>
 <p>Apart from the bundled sample, Galplay does not provide or distribute third-party games. You obtain and are responsible for imported works. The app checks project structure and required resources locally; it does not upload complete game files to Galplay&#x27;s servers.</p>
 <h2>Children</h2>

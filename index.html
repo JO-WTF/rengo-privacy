@@ -26,13 +26,13 @@ strong { font-weight: 600; }
 </head>
 <body>
 <h1>Galplay 隐私政策</h1>
-<p><strong>最后更新：2026 年 10 月 23 日</strong></p>
+<p><strong>最后更新：2026 年 11 月 23 日</strong></p>
 <hr>
 
 <h2>概述</h2>
-<p>Galplay 是在 iPhone 和 iPad 上运行用户自行导入的 Ren&#x27;Py、Kirikiri、ONScripter 等引擎视觉小说的播放器。应用不要求账号，没有广告、第三方分析或追踪 SDK；不会把游戏文件、存档或游戏文本上传到 Galplay 的服务器。为提供试用和购买功能，App 会自动与 Galplay 权益服务同步第 7 节所述的 Apple 交易信息；查询公告时会附带第 2 节所述的 App 与设备信息；游玩时会发送第 8 节所述的启动统计（游戏标题、引擎、游玩时长）。只有你主动提交适配需求，或在游戏失败提示中点「确定」时，App 才会把第 6 节所述的信息发送给 Galplay。</p>
+<p>Galplay 是在 iPhone 和 iPad 上运行用户自行导入的 Ren&#x27;Py、Kirikiri、ONScripter 等引擎视觉小说的播放器。应用不要求账号，没有广告、第三方分析或追踪 SDK； 不会把完整游戏文件上传到 Galplay 的服务器。为提供试用和购买功能，App 会 自动与 Galplay 权益服务同步第 7 节所述的 Apple 交易信息；查询公告时会附带第 2 节所述的 App 与设备信息；游玩时会发送第 8 节所述的启动统计（游戏标题、引擎、游玩时长）。第 6 节说明你主动提交的适配需求，以及经本次确认或持续授权发送的异常诊断、相关日志和对应游戏的可用存档副本。</p>
 <h2>留在你设备上的数据</h2>
-<p>以下内容保存在 App 沙盒或你明确选择的外部文件夹中；除第 6 节所述、由你确认发送的游戏名称，以及第 8 节所述的游戏标题与游玩时长外，Galplay 不会把它们上传到自有服务器。你主动使用备份或传输时，文件会送往你选择的位置：</p>
+<p>以下内容保存在 App 沙盒或你明确选择的外部文件夹中；除第 6 节所述、经你确认或 持续授权发送的游戏名称、诊断内容和对应游戏存档副本，以及第 8 节所述的游戏标题与 游玩时长外，Galplay 不会把它们上传到自有服务器。你主动使用备份或传输时，文件会送往 你选择的位置：</p>
 <ul>
 <li>你导入的作品文件</li>
 <li>游戏存档与游戏内设置</li>
@@ -43,7 +43,7 @@ strong { font-weight: 600; }
 <p>删除 App 会删除其沙盒内的数据；外部文件夹中的文件由你自行管理。</p>
 <h2>联网行为</h2>
 <p>导入的游戏可能按其自身设计联网。</p>
-<p>Galplay 仅在下列功能中联网；公告列表、游戏适配表和权益状态（第 7 节）会在打开 App 时自动更新，启动统计（第 8 节）在游玩时自动发送，其他传输、查询与提交由你选择使用：</p>
+<p>Galplay 仅在下列功能中联网；公告列表、游戏适配表和权益状态（第 7 节）会在打开 App 时自动更新，启动统计（第 8 节）在游玩时自动发送。开启第 6 节的自动上报授权后， 本功能支持的异常或崩溃诊断及可用存档副本会在后台发送；其他传输、查询与提交由你选择使用。</p>
 <h3>1. 作品资料与封面查询</h3>
 <p>当你为作品匹配资料时，App 会向以下服务发送<strong>你查询的作品名称</strong>：</p>
 <table>
@@ -78,21 +78,24 @@ strong { font-weight: 600; }
 <p>启用后，App 会在你的设备上开启一个临时的本地 HTTP 服务，供同一局域网内的浏览器传入游戏或存档文件。关闭传输页面后服务停止，文件不会经此功能上传到 Galplay 的服务器。</p>
 <h3>5. 外部文件夹备份（可选）</h3>
 <p>若你通过「文件」选择了一个外部文件夹作为备份位置，存档会写入该文件夹。 Galplay 仅在你明确配置、备份、浏览、恢复或删除时访问该文件夹；若文件夹位于 iCloud Drive，后续同步由 iOS 管理。WebDAV 和网盘<strong>游戏导入</strong>仍在开发中，与现有的 WebDAV <strong>存档备份</strong>不同。</p>
-<h3>6. 游戏适配请求与启动失败诊断报告（可选）</h3>
-<p>App 会从 Galplay 自己的服务（<code>api.galplay.cn</code> 或 <code>galplay.fuckk.me</code>，视你的地区而定）获取游戏适配表。只有在下列两种情况下，App 才会向该服务提交信息：</p>
-<p><strong>手动提交适配需求。</strong>你在「提交适配需求」中提交时，App 发送你填写的<strong>游戏名称、平台和备注</strong>。</p>
-<p><strong>游戏失败诊断报告。</strong>游戏启动或运行失败时，App 会弹出失败提示。只有你<strong>每次</strong>在提示中点「确定」，App 才会发送这一次失败的诊断报告；点「取消」或关闭提示不会发送任何内容，诊断记录只保留在本机。报告包含：</p>
+<h3>6. 游戏适配请求与异常诊断报告（可选）</h3>
+<p>App 会从 Galplay 自己的服务（<code>api.galplay.cn</code> 或 <code>galplay.fuckk.me</code>，视你的地区而定） 获取游戏适配表。适配需求与诊断按以下方式提交：</p>
+<p><strong>手动提交适配需求。</strong> 你在「提交适配需求」中提交时，App 发送你填写的<strong>游戏名称、平台和备注</strong>。</p>
+<p><strong>异常与崩溃诊断。</strong> 本功能支持游戏启动失败、运行异常和 App 崩溃等情况，不限于存档错误。 默认由你在提示中点「确定」后，在后台发送本次诊断及对应游戏的可用存档副本。 「不再询问」默认勾选；保持勾选并点「确定」，才会授权以后对本功能支持的异常或崩溃， 自动在后台发送诊断、相关日志和对应游戏的可用存档副本。你可以手动取消勾选，再点「确定」 仅发送本次资料。勾选状态本身不会建立授权；点「取消」或关闭提示，不会授予持续授权， 也不会启动本次发送。</p>
+<p>你可以在 App 设置中关闭以后的自动上报。关闭不会撤回已经确认并进入发送队列的报告及附件， 这些项目仍会继续发送或按既有规则重试。该授权使用独立设置，不会从旧的同意设置继承开启状态。</p>
+<p>游戏关联报告会按实际可获取的信息包含：</p>
 <ul>
 <li>游戏名称（含文件路径的名称不会发送）；</li>
 <li>App 在本机为该游戏生成的随机编号，以及本次失败和本次启动的随机编号；</li>
 <li>所用引擎与运行时版本，失败阶段、原因和错误代码；</li>
 <li>App 版本与构建号、系统版本和设备型号（不含设备唯一标识）；</li>
-<li>一份脱敏文本报告，包含本次运行概况及截至出错时近期的运行日志，例如出错的组件、资源或脚本位置名称、行号、错误代码和脱敏后的失败摘要。</li>
+<li>文本诊断报告，包含本次运行概况及截至出错时近期的运行日志，例如出错的组件、资源或脚本位置名称、行号、错误代码和失败摘要。</li>
 </ul>
-<p>报告可包含少量最近显示的剧情文本（可能含你设置的游戏内名称）、失败前的关键操作，以及 当时的游戏进度信息，以帮助定位问题；不包含整份游戏脚本、游戏文件、存档、键盘输入流、设备上的绝对文件路径、网址或账号凭据；App 发送前会移除绝对路径、网址和类似密钥的内容；必要的游戏内相对资源名称可能保留。报告也不包含设备标识符或广告标识符。若发送时网络不可用， App 会在本机暂存这份已确认的报告并稍后重试，重试次数有上限。</p>
-<p>诊断报告可能附带与该次失败相关的运行日志，发送内容有大小限制，超出部分不会发送；报告在后台发送。</p>
-<p>若 App 已从权益服务取得你的 Galplay ID（GP ID，见第 7 节），适配需求和诊断报告会附带它，以便你联系我们时找到对应记录；这些记录因此与你的 GP ID 关联。</p>
-<p>提交后，App 会用服务器返回的请求编号查询处理状态和开发者回复；「我的需求」列表只保存在本机。</p>
+<p>文本诊断可包含少量最近显示的剧情文本（可能含你设置的游戏内名称）、失败前的关键操作及 当时的游戏进度信息，以帮助定位问题；不包含整份游戏脚本、游戏文件或键盘输入流。 文本报告发送前沿用现有的敏感信息过滤，必要的游戏内相对资源名称可能保留。 报告不包含设备标识符或广告标识符。相关运行日志有大小限制；报告在后台发送，网络不可用时 会在本机暂存已获准发送的内容并稍后重试，重试次数有上限。</p>
+<p><strong>存档副本。</strong> 对于能可靠关联到游戏的报告，App 会尝试将该游戏的可用存档副本打包为 <code>.galsave</code> 附件。App 使用稳定的存档快照，或在可安全读取时复制已有存档，不要求引擎额外保存， 也不改动原存档。采集时间可能晚于故障发生时间，附件不保证包含尚未完成写入的最新进度。 原生存档副本可能包含游戏内名称、游戏内设置及游戏保存的其他内容；它不会按文本日志的规则过滤。 附件通过同一需求记录的既有消息附件通道上传，沿用单个附件 <strong>16 MiB</strong> 的大小上限， 不引入新的第三方 SDK。没有可用包、来源暂忙、包过大或无法确认关联等情况，会记录未附带存档的原因； 不会以其他游戏或后续新会话的存档代替。</p>
+<p>Apple MetricKit 提供的系统崩溃证据若不能可靠关联到某个游戏，只发送系统诊断，并将存档状态 标为「无对应游戏」；不会使用最近游玩的游戏来推断或补充存档。</p>
+<p>若 App 已从权益服务取得你的 Galplay ID（GP ID，见第 7 节），适配需求和诊断报告会附带 它，以便你联系我们时找到对应记录；这些记录因此与你的 GP ID 关联。</p>
+<p>提交后，App 会用服务器返回的请求编号查询处理状态和开发者回复；「我的需求」列表只保存 在本机。</p>
 <p><strong>用途。</strong>这些信息只用于排查兼容问题、为游戏增加支持和回复你的请求；不用于广告或追踪，不出售。服务运行在阿里云（中国大陆，深圳）的服务器上，适配需求、诊断报告及其索引、权益记录和启动记录存储在该服务器上，服务器数据的异地备份存放在 Cloudflare 的私有 R2 中。海外地区的请求会先经过 Cloudflare 转发到该服务器，Cloudflare 会处理你的 IP 地址等连接信息以传输请求；除阿里云、Cloudflare 作为托管与传输服务商外，不与第三方共享。Galplay 的数据库不保存 IP 地址。</p>
 <p><strong>保留与删除。</strong>适配需求和诊断索引保存在服务器上，在删除前会一直保留。如需删除，请发邮件到下方联系地址，写明游戏名称和提交时间（可在「我的需求」中查看）；如有 GP ID 也请一并提供。新版压缩报告保留 180 天后删除；需求记录、索引和旧版报告不因此自动删除。我们会删除对应的需求及其诊断报告。</p>
 <h3>7. 试用、购买与 Galplay ID</h3>
@@ -128,26 +131,34 @@ strong { font-weight: 600; }
 <p>如有疑问，请联系：<strong>zhongzhyu@gmail.com</strong></p>
 <hr>
 <h1>Galplay Privacy Policy</h1>
-<p><strong>Last updated: October 23, 2026</strong></p>
+<p><strong>Last updated: November 23, 2026</strong></p>
 <h2>Overview</h2>
-<p>Galplay plays visual novels that you import on your iPhone or iPad, using Ren&#x27;Py, Kirikiri, ONScripter, and other engines. The app requires no account and has no ads or third-party analytics or tracking SDKs. It does not upload game files, saves, or game text to Galplay&#x27;s servers. To provide the trial and purchases, the app automatically syncs the Apple transaction information described in section 7 with Galplay&#x27;s entitlement service. It sends the app and device information described in section 2 with announcement checks, and the launch statistics described in section 8 (game title, engine, play time) while you play. The app sends the information described in section 6 only when you submit a compatibility request or tap OK in a game failure dialog.</p>
+<p>Galplay plays visual novels that you import on your iPhone or iPad, using Ren&#x27;Py, Kirikiri, ONScripter, and other engines. The app requires no account and has no ads or third-party analytics or tracking SDKs. It does not upload complete game files to Galplay&#x27;s servers. To provide the trial and purchases, the app automatically syncs the Apple transaction information described in section 7 with Galplay&#x27;s entitlement service. It sends the app and device information described in section 2 with announcement checks, and the launch statistics described in section 8 (game title, engine, play time) while you play. Section 6 explains compatibility requests you submit and diagnostic reports, related logs, and available copies of the associated game&#x27;s saves sent with your confirmation or ongoing permission.</p>
 <h2>Data that stays on your device</h2>
-<p>Imported works, saves and in-game settings, library information, preferences, and translations generated on your device stay in the app sandbox or an external folder you explicitly choose. Apart from the game name you choose to send as described in section 6, and the game titles and play time described in section 8, Galplay does not upload them to its own servers. User-selected backups and transfers may send files to the destination you choose. Deleting the app removes sandbox data; you manage files in external folders yourself.</p>
+<p>Imported works, saves and in-game settings, library information, preferences, and translations generated on your device stay in the app sandbox or an external folder you explicitly choose. Exceptions are the game name, diagnostic content, and associated game save copies sent with your confirmation or ongoing permission under section 6, and the game titles and play time described in section 8. Otherwise, Galplay does not upload them to its own servers. User-selected backups and transfers may send files to the destination you choose. Deleting the app removes sandbox data; you manage files in external folders yourself.</p>
 <h2>Network activity</h2>
 <p>Imported games may connect to the internet according to their own design.</p>
-<p>Galplay uses the network only for the functions below. The announcement list, the game compatibility list, and your entitlement status (section 7) refresh when the app opens, and launch statistics (section 8) are sent while you play; other lookups, transfers, and submissions are used at your choice.</p>
+<p>Galplay uses the network only for the functions below. The announcement list, the game compatibility list, and your entitlement status (section 7) refresh when the app opens, and launch statistics (section 8) are sent while you play. If you enable automatic reporting under section 6, supported error or crash reports and available save copies are sent in the background. Other lookups, transfers, and submissions are used at your choice.</p>
 <p><strong>1. Metadata and cover art lookups.</strong> When you match a work, the app sends <strong>the title you are searching for</strong> to VNDB (<code>api.vndb.org</code>), IGDB (<code>api.igdb.com</code>, authenticated via <code>id.twitch.tv</code>), and SteamGridDB (<code>steamgriddb.com</code>). The title is sent to the relevant service. These services have their own privacy policies, outside our control.</p>
 <p><strong>2. Announcements and likes.</strong> The app may request announcements in your app language when it opens. Liking an announcement sends its ID without requiring an account; the liked state stays on this device and does not sync across devices. Once the app has your Galplay ID (GP ID, see section 7), the same check also fetches personal messages for you (such as play time added by support) and includes your GP ID, app version, system version, device model (for example <code>iPhone17,2</code>), App Store country, and app language. The server keeps the time of the latest check and this information for that GP ID for support and compatibility troubleshooting. No device or advertising identifier is sent.</p>
 <p><strong>3. WebDAV save backup (optional).</strong> If you configure a WebDAV server, save files are uploaded to <strong>the server you specify</strong>. The address, username, and password are stored on your device and are never sent to us or any third party.</p>
 <p><strong>4. Local network game and save transfer (optional).</strong> When enabled, the app runs a temporary local HTTP service so a browser on the same network can send game or save files. The service stops when you close the transfer page; this feature does not upload the files to Galplay&#x27;s servers.</p>
 <p><strong>5. External-folder backup (optional).</strong> If you pick a folder in Files, saves are written there. Galplay accesses it only when you explicitly configure, back up, browse, restore, or delete. If you choose iCloud Drive, iOS handles subsequent syncing. WebDAV and cloud <strong>game import</strong> are still in development; this is separate from the available WebDAV <strong>save backup</strong> feature.</p>
-<p><strong>6. Compatibility requests and game failure reports (optional).</strong> The app loads the game compatibility list from Galplay&#x27;s own service (<code>api.galplay.cn</code> or <code>galplay.fuckk.me</code>, depending on your region). It sends information to that service only in these two cases:</p>
+<p><strong>6. Compatibility requests and diagnostic reports (optional).</strong> The app loads the game compatibility list from Galplay&#x27;s own service (<code>api.galplay.cn</code> or <code>galplay.fuckk.me</code>, depending on your region). Requests and diagnostics are submitted as follows:</p>
+<p><strong>Compatibility requests you submit.</strong> When you submit Request compatibility, the app sends the <strong>game name, platform, and note</strong> you entered.</p>
+<p><strong>Error and crash reports.</strong> This feature supports game launch failures, runtime errors, and app crashes, including cases unrelated to saving. By default, tapping <strong>OK</strong> in the prompt authorizes the current report and available copies of the associated game&#x27;s saves to be sent in the background. <strong>Don&#x27;t ask again</strong> is checked by default. Leaving it checked and tapping <strong>OK</strong> grants ongoing permission to send future errors or crashes supported by this feature, together with diagnostic information, related logs, and available copies of the associated game&#x27;s saves, automatically in the background. If you clear the checkbox before tapping <strong>OK</strong>, only the current report and any available save copy are sent. The checked state alone does not grant ongoing permission. Tapping Cancel or closing the prompt does not grant ongoing permission or start that submission.</p>
+<p>You can turn off future automatic reporting in the app&#x27;s settings. Doing so does not withdraw reports or attachments already authorized and queued; those items continue to send or retry under the existing rules. This permission has its own setting and does not inherit an enabled state from older consent settings.</p>
+<p>Reports associated with a game include the following information when available:</p>
 <ul>
-<li><strong>Compatibility requests you submit.</strong> When you submit Request compatibility, the app sends the <strong>game name, platform, and note</strong> you entered.</li>
-<li><strong>Game failure reports.</strong> When a game fails to start or run, the app shows a failure dialog. The app sends a report for that failure only if you tap <strong>OK</strong> in that dialog, <strong>each time</strong>. Tapping Cancel or closing the dialog sends nothing, and the diagnostic record stays on your device. The report contains: the game name (a name containing a file path is not sent); random IDs the app created on your device for the game, this failure, and this launch; the engine and runtime version, failure phase, reason, and error codes; the app version and build number, OS version and device model (not a unique device ID); and a sanitized report with the run overview and recent run logs at the failure, including component/resource names, script locations, line numbers, error codes and error summaries.</li>
+<li>The game name (a name containing a file path is not sent);</li>
+<li>Random IDs the app created on your device for the game, this failure, and this launch;</li>
+<li>The engine and runtime version, failure phase, reason, and error codes;</li>
+<li>The app version and build number, OS version, and device model (not a unique device ID);</li>
+<li>A text diagnostic report with the run overview and recent logs at the failure, including component or resource names, script locations, line numbers, error codes, and failure summaries.</li>
 </ul>
-<p>The report may include a small amount of recently shown story text (which may contain in-game names you set), the key actions before the failure, and game progress information at that time, to help locate the problem; it does not include the full game script, game files, saves, keyboard input streams, absolute device file paths, URLs, or account credentials; the app removes absolute paths, URLs, and key-like values before sending. Necessary relative resource names inside the game may remain. It also does not include device or advertising identifiers. If the network is unavailable, the app keeps the report you confirmed on the device and retries later, up to a limited number of attempts.</p>
-<p>A diagnostic report may include run logs related to that failure, limited in size; it is sent in the background.</p>
+<p>Text diagnostics may include a small amount of recently shown story text (which may contain in-game names you set), key actions before the failure, and game progress information at that time to help locate the problem. They do not include the complete game script, game files, or keyboard input streams. Text reports use the existing sensitive-information filtering before transmission; necessary relative resource names inside the game may remain. Reports do not include device or advertising identifiers. Related run logs have size limits. Reports are sent in the background; if the network is unavailable, authorized content is kept on the device for later retries, up to a limited number of attempts.</p>
+<p><strong>Save copies.</strong> For reports reliably associated with a game, the app attempts to package available copies of that game&#x27;s saves as a <code>.galsave</code> attachment. It uses a stable save snapshot or copies existing saves when they can be read safely. It does not ask the engine to save again or change the original saves. Collection may happen after the failure, so the attachment may not contain the latest progress from an unfinished write. Native save copies may contain in-game names, in-game settings, and other content stored by the game; they are not filtered under the text-log rules. The attachment uses the existing message attachment channel for the same request, with the existing <strong>16 MiB</strong> limit per attachment and no new third-party SDK. If no package is available, the source is busy, the package is too large, or the association cannot be confirmed, the reason for omitting the save is recorded. Saves from another game or a later session are not used as substitutes.</p>
+<p>If system crash evidence from Apple MetricKit cannot be reliably associated with a game, only system diagnostics are sent and the save status is marked <strong>no associated game</strong>. The app does not infer an association or attach saves from the most recently played game.</p>
 <p>If the app has received your Galplay ID (GP ID, see section 7) from the entitlement service, it is attached to requests and reports so that we can find them when you contact us; those records are therefore linked to your GP ID.</p>
 <p>After submitting, the app uses the request number returned by the server to check the status and developer reply. The My requests list is stored only on your device.</p>
 <p><em>Use.</em> This information is used only to investigate compatibility problems, add game support, and reply to your request. It is not used for advertising or tracking and is not sold. The service runs on Alibaba Cloud servers in mainland China (Shenzhen). Requests, diagnostic reports and their indexes, entitlement records and launch records are stored on that server, and off-site backups of the server data are kept in private Cloudflare R2. Requests from outside mainland China pass through Cloudflare, which processes connection information such as your IP address to deliver them. Apart from Alibaba Cloud and Cloudflare acting as hosting and transmission providers it is not shared with third parties. Galplay&#x27;s database does not store IP addresses.</p>
